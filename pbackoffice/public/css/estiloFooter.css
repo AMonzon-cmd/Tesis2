@@ -1,0 +1,416 @@
+/*============================================*/
+/*------------ ESTILOS DE HEADER -------------*/
+/*============================================*/
+
+/* 
+*/
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+nav{
+    font-family: 'Montserrat', sans-serif !important;
+    position: fixed !important;
+    width:100%;
+}
+
+nav img {
+    margin-right: 15px;
+}
+
+
+.modal-content{
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+
+/*============================================*/
+/*------------ LOGIN MODAL -------------*/
+/*============================================*/
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  .logoLogin{
+      margin-top: -15px;
+      width:50%;
+      margin-bottom: 20px;
+  }
+  .modal label{
+      width:100%;
+  }
+
+
+.contenedor-cuerpo{
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.form-group{
+    height: 56px;
+}
+
+.contenedor-cuerpo input{
+    width: 100%;
+}
+
+.contenedor-cuerpo button{
+    width: 100%;
+}
+  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+    overflow: hidden;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 2% auto 15% auto; 
+    border: 1px solid #888;
+    width: 40%;
+    min-width: 360px;
+    /*SOMBREADO*/
+    -webkit-box-shadow: 2px 2px 5px rgb(82, 82, 82);
+    -moz-box-shadow: 2px 2px 5px rgb(82, 82, 82);
+    filter: shadow(color=rgb(82, 82, 82), direction=135, strength=2);
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 10px;
+    top: -26px;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+
+
+  
+
+
+
+
+
+/*============================================*/
+/*------------ ESTILOS DE FOOTER -------------*/
+/*============================================*/
+
+/* 
+
+TITULOS
+font-family: 'Montserrat', sans-serif;
+
+TEXTOS 
+font-family: 'Open Sans', sans-serif;   
+
+OTROS
+font-family: 'Roboto', sans-serif;
+
+
+*/
+
+footer{
+    bottom:0;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+
+/* Cabeza del footer */
+.headerFooter{
+    background-color: #262630;
+    text-align: center !important;
+    width: 100% !important;
+    float: left !important;
+}
+
+.headerFooter ul{
+    list-style: none;
+    display: flex ;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 97%;
+    margin: 8px auto;
+    float: left;
+}
+
+.headerFooter ul li{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.headerFooter ul li a {
+    text-decoration: none;
+    color: #E7E7E7;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif; 
+}
+
+.headerFooter ul li a:hover{
+    color: #ffffff;
+}
+/* Fin Cabeza del footer */
+
+
+
+
+
+/* Body footer */
+.bodyFooter{
+    background-color: #1b1b29;
+    width: 100%;
+    float: left;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.socialIcons{
+    margin-top: 40px;
+    text-align: center;
+
+}
+
+.socialIcons a{
+    margin: 2%;
+}
+
+.socialIcons img:hover{
+    transform : scale(1.06);
+    -moz-transform : scale(1.06);      /* Firefox */
+    -webkit-transform : scale(1.06);   /* Chrome - Safari */
+    -o-transform : scale(1.06);   
+}
+/*----------------*/
+
+.sentenceRemextiven{
+    float:left;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+
+.sentenceRemextiven div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+.contactRemextiven ul{
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 8px auto;
+    float: left;
+    width: 98%;
+}
+
+.contactRemextiven li{
+    margin: 2%;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+.lineWithIcon{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 8px auto;
+    margin: 0 auto;
+    color: #E7E7E7;
+}
+
+.lineWithIcon p{
+    margin: 0 auto;
+}
+
+.lineWithIcon img{
+    margin-right: 5px;
+}
+/*----------------------------------------*/
+
+
+/*--- Footer del footer ---*/
+
+footer{
+    position: absolute;
+    bottom: 0;
+}
+
+.footerFooter{
+    background-color: #262630;
+    float: left;
+    width: 100%;
+}
+
+.copyright {
+    display: flex !important;
+    align-items: center !important;
+    float: left !important;
+    color: #E7E7E7;
+    margin-left: 5px;
+    font-size: 12px;
+    margin: 0 auto;
+}
+
+.copyright img {
+    margin-right: -4px;
+    margin-left: 4px;
+}
+
+.copyright p{
+    margin: 9px auto;
+    margin-left: 8px;
+}
+
+
+/*---------------------------------------------*/
+/*============================================*/
+/*------------ BOTONES PERSONALIZADOS -------------*/
+/*============================================*/
+
+/* 
+    Botones redondeados y personalizados
+*/
+
+.btnCircle {
+     border-top-left-radius: 100px;
+     border-bottom-left-radius: 100px;
+     border-top-right-radius: 100px;
+     border-bottom-right-radius: 100px;
+     padding: 10px;
+     padding-left: 20px;
+     padding-right: 20px;
+     transition-property: background-color, color, border;
+     transition-duration: 0.4s;
+}
+
+
+
+
+/*-------------------------------------------------*/
+/*================================================*/
+/*------------ INPUTS PERSONALIZADOS ------------*/
+/*================================================*/
+
+/* 
+    Botones redondeados y personalizados
+*/
+
+.inputIconoInterno {
+    padding-left: 2.375rem;
+}
+
+.iconoInterno{
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.2rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+
+/*-------------------------------------------------*/
+/*================================================*/
+/*------------ DIVS PARA ERRORES ------------*/
+/*================================================*/
+
+.error{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 8 auto;
+    margin-top: 4px;
+    color: #dc3545
+
+}
+
+.error img{
+    width: 19px;
+    height: 20px;
+    margin-top: 1px;
+    margin-right: 3px;
+}
+

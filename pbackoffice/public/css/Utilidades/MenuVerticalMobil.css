@@ -1,0 +1,47 @@
+/* @function rem($value) {
+    @return unquote(($value/1px)/16+"rem");
+} */
+
+.menuMobil{
+    position: fixed;
+    top:0;
+    bottom:0;
+    margin: auto;
+    transform: translateX(-101%);
+    transition: all ease 0.25s;
+    color: white;    
+}
+
+.row span{
+    float: right !important;
+}
+
+
+@media (max-width:992px){
+    .menuMobil{
+        position: fixed;
+        top:0;
+        bottom:0;
+        margin: auto;
+        transform: translateX(-101%);
+        transition: all ease 0.25s;
+        background-color:red;    
+    }
+
+    .open{
+        transform: translateX(0);
+    }
+
+    .overlay{
+        position:fixed;
+        top:0;
+        left:0;
+        right:0;
+        margin: auto;
+        background-color: rgba(0,0,0,0.5);
+        display:none;
+    }
+    .openOverlay{
+        display:block;
+    }
+}

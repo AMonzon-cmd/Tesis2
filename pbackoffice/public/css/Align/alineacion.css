@@ -1,0 +1,83 @@
+.avatar{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    -webkit-box-shadow: 3px 2px 5px #999;
+    -moz-box-shadow: 3px 2px 5px #999;
+  filter: shadow(color=#999999, direction=135, strength=2);
+}
+
+.itemsLinear{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grupoConErrores{
+    height: 52px !important;
+}
+
+.textoCentrado{
+    text-align: center;
+}
+
+
+.metidoHaciaAbajo{
+    margin-bottom: -10px;
+}
+
+
+.paddingHaciaAbajo{
+    padding-bottom: 15px;
+}
+
+
+.listaUsuario{
+    list-style: none;
+    margin-top: 15px;
+}
+
+.listaUsuario a{
+    color: #6c6c6c;
+}
+
+.contListaUsuario{
+    width: 200px;
+}
+
+.contListaUsuario a{
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bordeNegro{
+    border: 2px solid black;
+}
+
+.bordeVerde{
+    border: 2px solid green;
+}
+
+.bordeAzul{
+    border: 2px solid blue;
+}
+
+.bordeRojo{
+    border: 2px solid red;
+}

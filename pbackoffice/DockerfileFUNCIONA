@@ -1,0 +1,42 @@
+FROM php:8.1.2-apache
+
+ENV ACCEPT_EULA=Y
+
+RUN a2enmod rewrite
+
+# RUN sed -ri -e 's!/var/www/html!/var/www/html/public/html!g' /etc/apache2/sites-available/*.conf
+# RUN sed -ri -e 's!/var/www/!/var/www/html/public/html!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
+
+RUN apt-get update && apt-get install -y nano wget gnupg2
+
+RUN docker-php-ext-install bcmath pcntl 
+
+#RUN pecl install xdebug-2.9.7
+#RUN docker-php-ext-enable xdebug \
+#&& echo "xdebug.remote_enable=on" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
+#&& echo "xdebug.remote_autostart=on" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
+#&& echo "xdebug.remote_port=9001" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
+#&& echo "xdebug.remote_handler=dbgp" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
+#&& echo "xdebug.remote_connect_back=0" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
+#&& echo "xdebug.idekey=vscode" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
+#&& echo "xdebug.remote_host=docker.for.mac.localhost" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+#RUN echo "xdebug.remote_enable=1" >> /usr/local/etc/php/php.ini
+
+RUN curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add - 
+RUN curl https://packages.microsoft.com/config/ubuntu/20.04/prod.list > /etc/apt/sources.list.d/mssql-release.list 
+RUN apt-get update 
+RUN ACCEPT_EULA=Y apt-get -y --no-install-recommends install msodbcsql17 unixodbc-dev 
+RUN pecl install sqlsrv
+RUN pecl install pdo_sqlsrv
+RUN docker-php-ext-enable sqlsrv pdo_sqlsrv
+
+RUN curl -sS https://getcomposer.org/installer -o composer-setup.php
+RUN php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+
+COPY . /var/www/
+COPY ./public/ /var/www/html
+COPY .env.prod /var/www/.env
+WORKDIR /var/www/
+
+RUN chown -R www-data:www-data /var/www/storage  \
+    && composer install  && composer dumpautoload 

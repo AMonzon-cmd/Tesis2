@@ -1,0 +1,24 @@
+/* PONER SIEMPRE FORM GROUP SI VOY A USAR COMO CAJA OCULTA */
+.form-group{
+    height: 56px;
+    margin-bottom:45px;
+}
+
+.containerError{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 8 auto;
+    margin-top: 4px;
+    color: #dc3545;
+    font-size: 13px;      
+}
+
+.containerError img{
+    width: 18px;
+    height: 18px;
+    margin-top: 1px;
+    margin-right: 3px;
+}
+
+

@@ -1,0 +1,64 @@
+textarea {
+    resize: none;
+  }
+
+.negrita{
+    font-weight: bold;
+}
+
+.cursiva{
+    font-weight: lighter;
+}
+
+
+.fuente10{
+    font-size: 10 !important;
+}
+
+.fuente11{
+    font-size: 11 !important;
+}
+
+
+.fuente12{
+    font-size: 12px !important;
+}
+
+
+.fuente13{
+    font-size: 13px !important;
+}
+
+
+.fuente14{
+    font-size: 14px !important;
+}
+
+
+.fuente15{
+    font-size: 15px !important;
+}
+
+.fuente16{
+    font-size: 16px !important;
+}
+
+.grisClaro{
+    color: #c0c0c0;
+  }
+  
+  .semiNegrita{
+    font-weight: 600;
+  }
+  
+  .cajaTransaccion:after {
+    content: "";
+    background-color:#dfdede;
+    position: absolute;
+    width: 1px;
+    height: 252px;
+    top: -4px;
+    left: 98%;
+    display: block;
+  }
+

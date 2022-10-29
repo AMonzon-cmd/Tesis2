@@ -1,0 +1,44 @@
+version: '3.7'
+
+services:
+  proxy:
+    build: proxy
+    restart: always
+    ports:
+      - 80:80
+    networks:
+      - client-server_network
+
+  client:
+    build: pcliente
+    restart: always
+    ports:
+      - 8080:8080
+    networks:
+      - client-server_network
+    depends_on:
+      - 'proxy'
+      - 'api'
+
+  backoffice:
+    build: pbackoffice
+    restart: unless-stopped
+    ports:
+      - 5050:5050
+    networks:
+      - client-server_network
+    depends_on:
+      - 'proxy'
+
+  api:
+    build: papi
+    restart: unless-stopped
+    ports:
+      - 5000:5000
+    networks:
+      - client-server_network
+    depends_on:
+      - 'proxy'
+
+networks:
+  client-server_network:

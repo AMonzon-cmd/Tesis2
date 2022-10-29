@@ -1,0 +1,96 @@
+.btnCircle {
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition-property: background-color, color, border;
+    transition-duration: 0.4s;
+    margin-bottom: 15px;
+}
+
+.btnIconDelete {
+    background-color: brown;
+    display:inline-block;
+    padding: 3px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    border-radius: 3px;
+    
+}
+
+.btnIconDelete:hover{
+    background-color: crimson;
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+
+.botonImagen:hover{
+	cursor: pointer;
+}
+
+.botonImagen:hover i{
+	transform: scale(1.3);
+}
+
+
+
+
+
+
+
+
+.cajaPunteada{
+    border-style: dashed; 
+    border-width: 1px;
+    padding: 5px;
+    font-size: 13px;
+}
+
+
+
+  .upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btnUp {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+.numberSinBoton{
+  -moz-appearance:textfield;
+}
+
+
+.numberSinBoton::-webkit-outer-spin-button,
+.numberSinBoton::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+
+

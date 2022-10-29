@@ -1,0 +1,85 @@
+.manta{
+  height: 100%; 
+  width: 100%; 
+  background-color:rgba(50, 50, 50, 0.5); 
+  position: absolute; 
+  top: 0; 
+  bottom:0;
+  left:0; 
+  right:0; 
+  z-index: 5; 
+  display:none;
+}
+
+/* Sirve solo para md, xl, xg */
+.imgCentradaManta{
+  width: 120px; 
+  position:absolute; 
+  top:50%; 
+  right: 35%; 
+  z-index:4;
+}
+
+
+.titleModal{
+    border-radius: 5px;  
+    -webkit-box-shadow: 6px 7px 17px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 7px 17px 0px rgba(0,0,0,0.75);
+    box-shadow: 6px 7px 17px 0px rgba(0,0,0,0.75);
+    padding-top:6px;
+    padding-bottom: 6px;
+  }
+
+.titleGreen{
+    background: linear-gradient(to top right, #3e9659 ,#51c174);
+    color: white;
+}
+
+
+
+.inmodal {
+  font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+
+/* MODAL */
+.inmodal .modal-content {
+  background-clip: padding-box;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  outline: 0 none;
+  position: relative;
+}
+.inmodal .modal-dialog {
+  z-index: 3;
+}
+.inmodal .modal-body {
+  padding: 20px 30px 30px 30px;
+}
+.inmodal .modal-body {
+  background: #f8fafb;
+}
+.inmodal .modal-header {
+  padding: 30px 15px;
+  text-align: center;
+  display: block;
+}
+.animated.modal.fade .modal-dialog {
+  -webkit-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+.inmodal .modal-title {
+  font-size: 26px;
+}
+.inmodal .modal-icon {
+  font-size: 84px;
+  color: #e2e3e3;
+}
+.modal-footer {
+  margin-top: 0;
+}
