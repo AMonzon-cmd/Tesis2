@@ -1,9 +1,0 @@
-FROM lucasramos/laravel-sqlsrv:1.1.0
-
-COPY . /var/www/
-COPY ./public/ /var/www/html
-COPY .env.prod /var/www/.env
-WORKDIR /var/www/
-
-
-RUN chown -R www-data:www-data /var/www/storage  \
